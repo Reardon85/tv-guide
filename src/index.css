@@ -1,13 +1,106 @@
+/* Global styles */
+
+/* Set a background color for the page */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f9f9f9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Set a border around the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Header styles */
+
+/* Add a gradient background to the header */
+header {
+  background: linear-gradient(to right, rgb(90, 49, 138), rgb(96, 26, 131));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Add some text shadow to the header title */
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px rgb(117, 21, 136);
+}
+
+/* Home styles */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Add a border to the genre bar */
+.genre-bar {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.genre-bar h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+/* Add some box-shadow to the show cards */
+.show-card {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add a hover effect to the show cards */
+.show-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.show-card:last-child {
+  margin-right: 0;
+}
+
+.show-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.show-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.show-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: #666;
+}
+
+/* Add a container for the show cards */
+.show-card-container {
+  display: flex;
+  flex-wrap: wrap;
 }

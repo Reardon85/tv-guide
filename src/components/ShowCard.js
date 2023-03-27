@@ -1,23 +1,14 @@
+
 import React from "react";
 
-
-const ShowCard = ({id, image, name}) => {
-
-
-    return(
+const ShowCard = ({ id, image, name}) => {
+  return (
+    <div className="show-card">
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
     
-      <ul>
-        
-          <li>
-            <img src={image} alt={name} />
-            <h3>{name}</h3>
-          </li>
+    </div>
+  );
+};
 
-      </ul>
-
-    )
-}
-
-
-export default ShowCard
-
+export default ShowCard;

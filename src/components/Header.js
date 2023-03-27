@@ -7,7 +7,6 @@ const Header = () => {
     return(
         <>
         <h1>HBO Min</h1>
-        <p>hello</p>
         </>
         
     )

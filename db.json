@@ -85,7 +85,7 @@
     },
     {
       "id": 69,
-      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113538.jpg",
       "name": "The Blacklist",
       "genres": 
         "Thriller"
@@ -95,7 +95,7 @@
     },
     {
       "id": 66,
-      "image": "https://www.tvmaze.com/shows/66/the-big-bang-theory",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "name": "The Big Bang Theory",
       "genre": 
         "Comedy"
@@ -119,8 +119,6 @@
       "name": "The Office",
       "genres": 
         "Comedy"
-
-      
 
     },
  
