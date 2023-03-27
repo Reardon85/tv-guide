@@ -19,15 +19,14 @@ const Header = ({setSearchShows}) => {
     return(
         <>
         <h1>HBO Min</h1>
+
         <p>hello</p>
         <form onSubmit={handleSubmit} >
             <input type="text" name="search"   />
             <button type="submit"> Search Shows</button>
 
-
-
-
         </form>
+
         </>
         
     )

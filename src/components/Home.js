@@ -10,20 +10,25 @@ const Home = ({genreShows}) => {
 
 
     return(
-        <div>
-            <h2>Comedy</h2>
-            {comedyShows}
-            <h2>Thriller</h2>
-            {thrillerShows}
-            <h2>Drama</h2>
-            {dramaShows}
-
-    
+        <div className="home">
+            <div className="genre-bar">
+                <h3>Comedy</h3>
+                {comedyShows}
+            </div>
+            <div className="genre-bar">
+                <h3>Thriller</h3>
+                {thrillerShows}
+            </div>
+            <div className="genre-bar">
+                <h3>Drama</h3>
+                {dramaShows}
+            </div>
         </div>
     )
 }
 
-export default Home
+export default Home;
+
 
 
 // import React, { useState, useEffect } from "react";
