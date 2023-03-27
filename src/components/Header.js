@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({ setSearchShows }) => {
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     console.log(e.target.search.value);
@@ -10,6 +13,8 @@ const Header = ({ setSearchShows }) => {
     fetch(`https://api.tvmaze.com/search/shows?q=${e.target.search.value}`)
       .then((r) => r.json())
       .then((d) => setSearchShows(d));
+      navigate(`/search/`)
+      
   };
 
   return (
@@ -27,4 +32,6 @@ const Header = ({ setSearchShows }) => {
   );
 };
 
+
 export default Header;
+
