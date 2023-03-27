@@ -2,7 +2,7 @@
   "shows": [
     {
       "id": 139,
-      "image": "https://www.tvmaze.com/shows/139/girls",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
       "name": "Girls",
       "genre": [
         "Drama"
@@ -11,7 +11,7 @@
     },
     {
       "id": 169,
-      "image": "https://www.tvmaze.com/shows/169/breaking-bad",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2400.jpg",
       "name": "Breaking Bad",
       "genres": [
         "Drama"
@@ -20,7 +20,7 @@
     },
     {
       "id": 47856,
-      "image": "https://www.tvmaze.com/shows/47856/the-terminal-list",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1114091.jpg",
       "name": "The Terminal List",
       "genres": [
         "Drama"
@@ -28,7 +28,7 @@
     },
     {
       "id": 31365,
-      "image": "https://www.tvmaze.com/shows/31365/manifest",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/424/1060802.jpg",
       "name": "Manifest",
       "genres": [
         "Drama"
@@ -38,7 +38,7 @@
     },
     {
       "id": 12036,
-      "image": "https://www.tvmaze.com/shows/12036/altered-carbon",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/240/602152.jpg",
       "name": "Altered Carbon",
       "genres": [
         "Drama"
@@ -48,7 +48,7 @@
     },
     {
       "id": 13417,
-      "image": "https://www.tvmaze.com/shows/13417/ozark",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/996611.jpg",
       "name": "Ozark",
       "genres": [
         "Thriller"
@@ -58,7 +58,7 @@
     },
     {
       "id": 175,
-      "image": "https://www.tvmaze.com/shows/175/house-of-cards",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/169/424482.jpg",
       "name": "House of Cards",
       "genres": [
         "Thriller"
@@ -68,7 +68,7 @@
     },
     {
       "id": 10822,
-      "image": "https://www.tvmaze.com/shows/10822/mindhunter",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg",
       "name": "MINDHUNTER",
       "genres": [
         "Thriller"
@@ -78,7 +78,7 @@
     },
     {
       "id": 20895,
-      "image": "https://www.tvmaze.com/shows/20895/the-sinner",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/365/914978.jpg",
       "name": "The Sinner",
       "genres": [
         "Thriller"
@@ -88,7 +88,7 @@
     },
     {
       "id": 69,
-      "image": "https://www.tvmaze.com/shows/69/the-blacklist",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "name": "The Blacklist",
       "genres": [
         "Thriller"
@@ -107,7 +107,7 @@
 
     {
       "id": 431,
-      "image": "https://www.tvmaze.com/shows/431/friends",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/41/104550.jpg",
       "name": "Friends",
       "genres": [
         "Comedy"
@@ -118,7 +118,7 @@
 
     {
       "id": 526,
-      "image": "https://www.tvmaze.com/shows/526/the-office",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/271/678637.jpg",
       "name": "The Office",
       "genres": [
         "Comedy"
@@ -129,7 +129,7 @@
  
     {
       "id": 530,
-      "image": "https://www.tvmaze.com/shows/530/seinfeld",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/83/207960.jpg",
       "name": "Seinfeld",
       "genres": [
         "Comedy"
@@ -139,7 +139,7 @@
     },
     {
       "id": 171,
-      "image": "https://www.tvmaze.com/shows/171/how-i-met-your-mother",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2451.jpg",
       "name": "How I Met Your Mother",
       "genres": [
         "Comedy"
