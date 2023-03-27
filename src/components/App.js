@@ -11,6 +11,7 @@ function App() {
 
 
   const [genreShows, setGenreShows] = useState([])
+  const [searchShows, setSearchShows] = useState([])
 
 
   useEffect(() => {
@@ -23,16 +24,16 @@ function App() {
       });
   }, []);
 
-  console.log(genreShows)
+  console.log(searchShows)
 
 
   return (
     <div className="App">
 
-      <Header />
+      <Header setSearchShows={setSearchShows} />
       <Routes >
         <Route exact path="/" element={<Home genreShows={genreShows} />} />
-        <Route path="/search" element={<SearchResults />} />
+        <Route path="/search" element={<SearchResults searchShows={searchShows} />} />
         <Route path="/show/" element={<ShowInfo />} />
       </Routes>
     </div>
