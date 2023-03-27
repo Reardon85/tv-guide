@@ -9,18 +9,22 @@ import ShowInfo from "./ShowInfo";
 
 function App() {
 
+
   const [genreShows, setGenreShows] = useState([])
+
 
   useEffect(() => {
     fetch("http://localhost:3000/shows")
       .then((response) => response.json())
       .then((data) => {
+
         setGenreShows(data)
         
       });
   }, []);
 
   console.log(genreShows)
+
 
   return (
     <div className="App">

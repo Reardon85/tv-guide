@@ -1,4 +1,5 @@
 import React from "react";
+
 import ShowCard from "./ShowCard";
 
 const Home = ({genreShows}) => {
@@ -53,3 +54,4 @@ export default Home
 // };
 
 // export default Home;
+

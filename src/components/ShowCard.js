@@ -20,3 +20,4 @@ const ShowCard = ({id, image, name}) => {
 
 
 export default ShowCard
+
