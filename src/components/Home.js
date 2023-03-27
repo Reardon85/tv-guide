@@ -9,6 +9,7 @@ const Home = ({genreShows}) => {
     const dramaShows = genreShows.filter((show) => show.genres === "Drama").map((show) => <ShowCard key={show.id} {...show} />)
 
 
+
     return(
         <div className="home">
             <div className="genre-bar">

@@ -4,7 +4,7 @@
       "id": 139,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
       "name": "Girls",
-      "genre": "Drama"
+      "genres": "Drama"
 
 
     },
@@ -97,7 +97,7 @@
       "id": 66,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "name": "The Big Bang Theory",
-      "genre": 
+      "genres": 
         "Comedy"
       
     },
