@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import React from "react";
 import Header from "./Header";
 import Home from "./Home";
@@ -11,17 +11,11 @@ function App() {
     <div className="App">
 
       <Header />
-      <Switch >
-        <Route exact path="/" >
-          <Home />
-        </Route>
-        <Route path="/search">
-          <SearchResults />
-        </Route>
-        <Route path="/show">
-          <ShowInfo />
-        </Route>
-      </Switch>
+      <Routes >
+        <Route exact path="/" element={<Home />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/show/" element={<ShowInfo />} />
+      </Routes>
     </div>
   );
 }

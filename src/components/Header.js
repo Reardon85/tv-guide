@@ -5,7 +5,7 @@ const Header = () => {
 
 
     return(
-        <p></p>
+        <h1>HBO Min</h1>
     )
 }
 
