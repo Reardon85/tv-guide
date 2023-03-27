@@ -9,24 +9,29 @@ import ShowInfo from "./ShowInfo";
 
 function App() {
 
-  const [shows, setShows] = useState([])
+
+  const [genreShows, setGenreShows] = useState([])
+
 
   useEffect(() => {
     fetch("http://localhost:3000/shows")
       .then((response) => response.json())
       .then((data) => {
-        setShows(data)
 
+        setGenreShows(data)
+        
       });
   }, []);
-  console.log(shows)
+
+  console.log(genreShows)
+
 
   return (
     <div className="App">
 
       <Header />
       <Routes >
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home genreShows={genreShows} />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/show/" element={<ShowInfo />} />
       </Routes>

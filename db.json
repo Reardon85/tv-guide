@@ -4,114 +4,111 @@
       "id": 139,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
       "name": "Girls",
-      "genre": [
-        "Drama"
+      "genre": "Drama"
 
-      ]
+
     },
     {
       "id": 169,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2400.jpg",
       "name": "Breaking Bad",
-      "genres": [
-        "Drama"
-      ]
+      "genres": "Drama"
+      
 
     },
     {
       "id": 47856,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1114091.jpg",
       "name": "The Terminal List",
-      "genres": [
+      "genres": 
         "Drama"
-        ]
+        
     },
     {
       "id": 31365,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/424/1060802.jpg",
       "name": "Manifest",
-      "genres": [
+      "genres": 
         "Drama"
 
-      ]
 
     },
     {
       "id": 12036,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/240/602152.jpg",
       "name": "Altered Carbon",
-      "genres": [
+      "genres": 
         "Drama"
 
-      ]
+      
 
     },
     {
       "id": 13417,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/996611.jpg",
       "name": "Ozark",
-      "genres": [
+      "genres": 
         "Thriller"
 
-      ]
+      
 
     },
     {
       "id": 175,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/169/424482.jpg",
       "name": "House of Cards",
-      "genres": [
+      "genres": 
         "Thriller"
 
-      ]
+      
 
     },
     {
       "id": 10822,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg",
       "name": "MINDHUNTER",
-      "genres": [
+      "genres": 
         "Thriller"
 
-      ]
+      
 
     },
     {
       "id": 20895,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/365/914978.jpg",
       "name": "The Sinner",
-      "genres": [
+      "genres": 
         "Thriller"
 
-      ]
+      
 
     },
     {
       "id": 69,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "name": "The Blacklist",
-      "genres": [
+      "genres": 
         "Thriller"
 
-      ]
+      
 
     },
     {
       "id": 66,
       "image": "https://www.tvmaze.com/shows/66/the-big-bang-theory",
       "name": "The Big Bang Theory",
-      "genre": [
+      "genre": 
         "Comedy"
-      ]
+      
     },
 
     {
       "id": 431,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/41/104550.jpg",
       "name": "Friends",
-      "genres": [
+      "genres": 
         "Comedy"
-      ]
+      
 
     },
 
@@ -120,10 +117,10 @@
       "id": 526,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/271/678637.jpg",
       "name": "The Office",
-      "genres": [
+      "genres": 
         "Comedy"
 
-      ]
+      
 
     },
  
@@ -131,20 +128,20 @@
       "id": 530,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/83/207960.jpg",
       "name": "Seinfeld",
-      "genres": [
+      "genres": 
         "Comedy"
 
-      ]
+      
 
     },
     {
       "id": 171,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2451.jpg",
       "name": "How I Met Your Mother",
-      "genres": [
+      "genres": 
         "Comedy"
 
-      ]
+      
 
     }
     

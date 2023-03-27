@@ -1,11 +1,20 @@
 import React from "react";
 
 
-const ShowCard = () => {
+const ShowCard = ({id, image, name}) => {
 
 
     return(
-        <div></div>
+    
+      <ul>
+        
+          <li>
+            <img src={image} alt={name} />
+            <h3>{name}</h3>
+          </li>
+
+      </ul>
+
     )
 }
 
