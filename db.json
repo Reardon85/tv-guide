@@ -1,19 +1,152 @@
 {
-  "posts": [
+  "shows": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 139,
+      "image": "https://www.tvmaze.com/shows/139/girls",
+      "name": "Girls",
+      "genre": [
+        "Drama"
+
+      ]
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 169,
+      "image": "https://www.tvmaze.com/shows/169/breaking-bad",
+      "name": "Breaking Bad",
+      "genres": [
+        "Drama"
+      ]
+
+    },
+    {
+      "id": 47856,
+      "image": "https://www.tvmaze.com/shows/47856/the-terminal-list",
+      "name": "The Terminal List",
+      "genres": [
+        "Drama"
+        ]
+    },
+    {
+      "id": 31365,
+      "image": "https://www.tvmaze.com/shows/31365/manifest",
+      "name": "Manifest",
+      "genres": [
+        "Drama"
+
+      ]
+
+    },
+    {
+      "id": 12036,
+      "image": "https://www.tvmaze.com/shows/12036/altered-carbon",
+      "name": "Altered Carbon",
+      "genres": [
+        "Drama"
+
+      ]
+
+    },
+    {
+      "id": 13417,
+      "image": "https://www.tvmaze.com/shows/13417/ozark",
+      "name": "Ozark",
+      "genres": [
+        "Thriller"
+
+      ]
+
+    },
+    {
+      "id": 175,
+      "image": "https://www.tvmaze.com/shows/175/house-of-cards",
+      "name": "House of Cards",
+      "genres": [
+        "Thriller"
+
+      ]
+
+    },
+    {
+      "id": 10822,
+      "image": "https://www.tvmaze.com/shows/10822/mindhunter",
+      "name": "MINDHUNTER",
+      "genres": [
+        "Thriller"
+
+      ]
+
+    },
+    {
+      "id": 20895,
+      "image": "https://www.tvmaze.com/shows/20895/the-sinner",
+      "name": "The Sinner",
+      "genres": [
+        "Thriller"
+
+      ]
+
+    },
+    {
+      "id": 69,
+      "image": "https://www.tvmaze.com/shows/69/the-blacklist",
+      "name": "The Blacklist",
+      "genres": [
+        "Thriller"
+
+      ]
+
+    },
+    {
+      "id": 66,
+      "image": "https://www.tvmaze.com/shows/66/the-big-bang-theory",
+      "name": "The Big Bang Theory",
+      "genre": [
+        "Comedy"
+      ]
+    },
+
+    {
+      "id": 431,
+      "image": "https://www.tvmaze.com/shows/431/friends",
+      "name": "Friends",
+      "genres": [
+        "Comedy"
+      ]
+
+    },
+
+
+    {
+      "id": 526,
+      "image": "https://www.tvmaze.com/shows/526/the-office",
+      "name": "The Office",
+      "genres": [
+        "Comedy"
+
+      ]
+
+    },
+ 
+    {
+      "id": 530,
+      "image": "https://www.tvmaze.com/shows/530/seinfeld",
+      "name": "Seinfeld",
+      "genres": [
+        "Comedy"
+
+      ]
+
+    },
+    {
+      "id": 171,
+      "image": "https://www.tvmaze.com/shows/171/how-i-met-your-mother",
+      "name": "How I Met Your Mother",
+      "genres": [
+        "Comedy"
+
+      ]
+
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    
+  ]
 }
