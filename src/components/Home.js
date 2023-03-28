@@ -8,19 +8,17 @@ const Home = ({genreShows, onSetShowDetails,}) => {
     const thrillerShows = genreShows.filter((show) => show.genres === "Thriller").map((show) => <ShowCard key={show.id} {...show} onSetShowDetails={onSetShowDetails}/>)
     const dramaShows = genreShows.filter((show) => show.genres === "Drama").map((show) => <ShowCard key={show.id} {...show} onSetShowDetails={onSetShowDetails}/>)
 
-
-
     return(
         <div className="home">
-            <div className="genre-bar">
+            <div className="genre-bar comedy">
                 <h3>Comedy</h3>
                 {comedyShows}
             </div>
-            <div className="genre-bar">
+            <div className="genre-bar thriller">
                 <h3>Thriller</h3>
                 {thrillerShows}
             </div>
-            <div className="genre-bar">
+            <div className="genre-bar drama">
                 <h3>Drama</h3>
                 {dramaShows}
             </div>

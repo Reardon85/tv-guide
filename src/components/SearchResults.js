@@ -21,3 +21,5 @@ const SearchResults = ({searchShows, onSetShowDetails}) => {
 }
 
 export default SearchResults
+
+
