@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import logo from '../HBOMIN.png'
 
 const Header = ({ setSearchShows }) => {
 
@@ -26,7 +27,7 @@ const Header = ({ setSearchShows }) => {
   return (
     <header>
       <img
-        src="https://s3.amazonaws.com/media.mediapost.com/dam/cropped/2022/07/14/hbomin-600_K0kz8T5.jpg"
+        src={logo}
         alt="HBO Min"
         onClick={handleLogoClick}
       />
