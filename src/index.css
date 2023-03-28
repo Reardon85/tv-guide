@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #5c2a94;
 }
 
 /* Set a border around the container */
@@ -22,7 +22,7 @@ body {
 /* Add a gradient background to the header */
 header {
   background: linear-gradient(to right, rgb(90, 49, 138), rgb(96, 26, 131));
-  color: #fff;
+  color: rgb(86, 61, 176);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +33,7 @@ header img {
   width: 150px;
   height: auto;
   transition: transform 0.5s ease-in-out;
+  background-color: transparent;
 }
 
 header img:hover {
@@ -94,17 +95,60 @@ h1 {
 .genre-bar {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #4146c1, #521126, #9c27b0);
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  animation: fade-in 1.5s ease-in-out;
 }
 
 .genre-bar h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.genre-label {
   font-size: 1.5rem;
-  margin: 0 0 10px;
+  margin: 0 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgb(0, 0, 0);
 }
+
+.comedy {
+  background-color: #f44336;
+}
+
+.thriller {
+  background-color: #4caf50;
+}
+
+.drama {
+  background-color: #2196f3;
+}
+
+.genre-bar .icon {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 /* Add some box-shadow to the show cards */
 .show-card {
@@ -149,4 +193,109 @@ h1 {
 .show-card-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+
+/* Submit button */
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  width: 200px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-box .search-btn {
+  border: none;
+  background: #6c5ce7;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 0 3px 3px 0;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-box .search-btn:hover {
+  background: #4834d4;
+}
+
+.search-box .fa-search {
+  margin-right: 5px;
+}
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.search-btn {
+  background-color: #f44336;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+}
+
+.search-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Add styles for the search icon */
+.search-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Add styles to center the icon vertically and horizontally */
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add styles to remove background color and border */
+.search-btn {
+  background-color: transparent;
+  border: none;
+}
+
+/* Add styles to set width and height */
+.search-btn {
+  width: 40px;
+  height: 40px;
+}
+
+/* Add styles to hide the input element */
+.search-input {
+  display: none;
+}
+
+/* Add styles to show the input element when the button element is hovered over */
+.search-bar:hover .search-input {
+  display: block;
 }
