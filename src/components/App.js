@@ -13,6 +13,8 @@ function App() {
 
   const [genreShows, setGenreShows] = useState([])
   const [searchShows, setSearchShows] = useState([])
+  const [showDetails, setShowDetails] = useState(null)
+ 
 
 
   useEffect(() => {
@@ -33,9 +35,9 @@ function App() {
 
       <Header setSearchShows={setSearchShows} />
       <Routes >
-        <Route exact path="/" element={<Home genreShows={genreShows} />} />
-        <Route path="/search" element={<SearchResults searchShows={searchShows} />} />
-        <Route path="/show/" element={<ShowInfo />} />
+        <Route exact path="/" element={<Home genreShows={genreShows} onSetShowDetails={setShowDetails}  />} />
+        <Route path="/search" element={<SearchResults searchShows={searchShows} onSetShowDetails={setShowDetails} />} />
+        <Route path="/show/*" element={<ShowInfo showDetails={showDetails}/>} />
       </Routes>
     </div>
   );

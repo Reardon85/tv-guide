@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #512696; /* Change the color code to your desired color */
+  background-color: #f9f9f9;
 }
 
 /* Set a border around the container */
@@ -28,6 +28,7 @@ header {
   align-items: center;
   padding: 10px 20px;
 }
+
 header img {
   width: 150px;
   height: auto;
@@ -74,7 +75,6 @@ header img:hover {
     transform: skewY(0deg) rotate(0deg);
   }
 }
-
 /* Add some text shadow to the header title */
 h1 {
   font-size: 2rem;
