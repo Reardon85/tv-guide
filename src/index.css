@@ -31,6 +31,48 @@ header {
 header img {
   width: 150px;
   height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+header img:hover {
+  animation: logo-wave 1.5s ease-in-out;
+  transform-origin: bottom center;
+}
+
+@keyframes logo-wave {
+  0% {
+    transform: skewY(0deg) rotate(0deg);
+  }
+  10% {
+    transform: skewY(-15deg) rotate(-5deg);
+  }
+  20% {
+    transform: skewY(5deg) rotate(-10deg);
+  }
+  30% {
+    transform: skewY(-10deg) rotate(15deg);
+  }
+  40% {
+    transform: skewY(15deg) rotate(10deg);
+  }
+  50% {
+    transform: skewY(-10deg) rotate(-15deg);
+  }
+  60% {
+    transform: skewY(5deg) rotate(10deg);
+  }
+  70% {
+    transform: skewY(-15deg) rotate(-5deg);
+  }
+  80% {
+    transform: skewY(10deg) rotate(0deg);
+  }
+  90% {
+    transform: skewY(-5deg) rotate(5deg);
+  }
+  100% {
+    transform: skewY(0deg) rotate(0deg);
+  }
 }
 
 /* Add some text shadow to the header title */
