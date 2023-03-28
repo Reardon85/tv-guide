@@ -1,11 +1,28 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-const ShowInfo = () => {
+const ShowInfo = ({showDetails}) => {
 
+    // useEffect(() => {
+    //     fetch(`https://api.tvmaze.com/shows/${id}`)
+    //       .then((response) => response.json())
+    //       .then((data) => {
+    
+    //         setGenreShows(data)
+            
+    //       });
+    //   }, []);
+    
+    
+
+    console.log(showDetails)
 
 
     return(
-        <p></p>
+        
+        
+        showDetails ? <img src={showDetails.image.medium} alt={showDetails.name} />: null
+       
+        
     )
 }
 
