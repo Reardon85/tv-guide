@@ -5,143 +5,134 @@
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
       "name": "Girls",
       "genres": "Drama"
-
-
     },
     {
       "id": 169,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2400.jpg",
       "name": "Breaking Bad",
       "genres": "Drama"
-      
-
     },
     {
       "id": 47856,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1114091.jpg",
       "name": "The Terminal List",
-      "genres": 
-        "Drama"
-        
+      "genres": "Drama"
     },
     {
       "id": 31365,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/424/1060802.jpg",
       "name": "Manifest",
-      "genres": 
-        "Drama"
-
-
+      "genres": "Drama"
     },
     {
       "id": 12036,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/240/602152.jpg",
       "name": "Altered Carbon",
-      "genres": 
-        "Drama"
-
-      
-
+      "genres": "Drama"
     },
     {
       "id": 13417,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/996611.jpg",
       "name": "Ozark",
-      "genres": 
-        "Thriller"
-
-      
-
+      "genres": "Thriller"
     },
     {
       "id": 175,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/169/424482.jpg",
       "name": "House of Cards",
-      "genres": 
-        "Thriller"
-
-      
-
+      "genres": "Thriller"
     },
     {
       "id": 10822,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg",
       "name": "MINDHUNTER",
-      "genres": 
-        "Thriller"
-
-      
-
+      "genres": "Thriller"
     },
     {
       "id": 20895,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/365/914978.jpg",
       "name": "The Sinner",
-      "genres": 
-        "Thriller"
-
-      
-
+      "genres": "Thriller"
     },
     {
       "id": 69,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113538.jpg",
       "name": "The Blacklist",
-      "genres": 
-        "Thriller"
-
-      
-
+      "genres": "Thriller"
     },
     {
       "id": 66,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "name": "The Big Bang Theory",
-      "genres": 
-        "Comedy"
-      
+      "genres": "Comedy"
     },
-
     {
       "id": 431,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/41/104550.jpg",
       "name": "Friends",
-      "genres": 
-        "Comedy"
-      
-
+      "genres": "Comedy"
     },
-
-
     {
       "id": 526,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/271/678637.jpg",
       "name": "The Office",
-      "genres": 
-        "Comedy"
-
+      "genres": "Comedy"
     },
- 
     {
       "id": 530,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/83/207960.jpg",
       "name": "Seinfeld",
-      "genres": 
-        "Comedy"
-
-      
-
+      "genres": "Comedy"
     },
     {
       "id": 171,
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2451.jpg",
       "name": "How I Met Your Mother",
-      "genres": 
-        "Comedy"
-
-      
-
+      "genres": "Comedy"
     }
-    
+  ],
+  "discussion": [
+    {
+      "id": 171,
+      "comments": [
+        {
+          "id": 12345,
+          "user": "steven",
+          "title": "Worst show Ever",
+          "body": "I hate this show"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "comments": []
+    },
+    {
+      "id": 66,
+      "comments": [
+        {
+          "user": "Anoymous",
+          "title": "dumb",
+          "body": "show is dumb"
+        },
+        {
+          "user": "Anoymous",
+          "title": "episode 3x03",
+          "body": "such a smelly episode"
+        }
+      ]
+    },
+    {
+      "comments": [],
+      "id": 172
+    },
+    {
+      "comments": [],
+      "id": 173
+    },
+    {
+      "id": 431,
+      "comments": []
+    }
   ]
 }

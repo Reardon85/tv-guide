@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import Discussion from "./Discussion";
 
 const ShowInfo = ({showDetails}) => {
 
@@ -19,8 +20,14 @@ const ShowInfo = ({showDetails}) => {
 
     return(
         
-        
-        showDetails ? <img src={showDetails.image.medium} alt={showDetails.name} />: null
+        <div>
+        {showDetails ? 
+        <>
+        <img src={showDetails.image.medium} alt={showDetails.name} />
+        <Discussion id={showDetails.id} /></>
+        : 
+        null}
+        </div>
        
         
     )
