@@ -14,6 +14,7 @@ const ShowInfo = ({showDetails}) => {
     //   }, []);
     
     
+    
 
     console.log(showDetails)
 

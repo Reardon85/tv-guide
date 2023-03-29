@@ -93,74 +93,21 @@
   ],
   "discussion": [
     {
-      "id": 171,
-      "comments": [
-        {
-          "id": 12345,
-          "user": "steven",
-          "title": "Worst show Ever",
-          "body": "I hate this show"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "comments": []
-    },
-    {
       "id": 66,
       "comments": [
         {
           "user": "Anoymous",
-          "title": "dumb",
-          "body": "show is dumb"
+          "date": "3/29/2023, 2:22:23 PM",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+          "text": "test"
         },
         {
           "user": "Anoymous",
-          "title": "episode 3x03",
-          "body": "such a smelly episode"
+          "date": "3/29/2023, 2:24:31 PM",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+          "text": "I don't think this show is good because it is a bad show. I know what shows are good and what shows are bad and this is a bad show. we should cancel this show if we don't then I will cry. i cry  a lot my friends don't like it. But I can't help it because I don't like this show."
         }
       ]
-    },
-    {
-      "comments": [],
-      "id": 172
-    },
-    {
-      "comments": [],
-      "id": 173
-    },
-    {
-      "id": 431,
-      "comments": []
-    },
-    {
-      "id": 13739,
-      "comments": []
-    },
-    {
-      "id": 12036,
-      "comments": []
-    },
-    {
-      "id": 13417,
-      "comments": []
-    },
-    {
-      "id": 530,
-      "comments": []
-    },
-    {
-      "id": 45143,
-      "comments": []
-    },
-    {
-      "id": 63610,
-      "comments": []
-    },
-    {
-      "id": 56594,
-      "comments": []
     }
   ]
 }
