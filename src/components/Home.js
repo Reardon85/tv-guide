@@ -2,11 +2,11 @@ import React from "react";
 
 import ShowCard from "./ShowCard";
 
-const Home = ({genreShows, onSetShowDetails,}) => {
+const Home = ({genreShows}) => {
 
-    const comedyShows = genreShows.filter((show) => show.genres === "Comedy").map((show) => <ShowCard key={show.id} {...show} onSetShowDetails={onSetShowDetails} />)
-    const thrillerShows = genreShows.filter((show) => show.genres === "Thriller").map((show) => <ShowCard key={show.id} {...show} onSetShowDetails={onSetShowDetails}/>)
-    const dramaShows = genreShows.filter((show) => show.genres === "Drama").map((show) => <ShowCard key={show.id} {...show} onSetShowDetails={onSetShowDetails}/>)
+    const comedyShows = genreShows.filter((show) => show.genres === "Comedy").map((show) => <ShowCard key={show.id} {...show}  />)
+    const thrillerShows = genreShows.filter((show) => show.genres === "Thriller").map((show) => <ShowCard key={show.id} {...show} />)
+    const dramaShows = genreShows.filter((show) => show.genres === "Drama").map((show) => <ShowCard key={show.id} {...show} />)
 
     return(
         <div className="home">
