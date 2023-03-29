@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import Discussion from "./Discussion";
 import { Route, Routes, useParams} from "react-router-dom";
 
-const ShowInfo = ({showDetails, onSetShowDetails}) => {
+const ShowInfo = ({showDetails, onSetShowDetails, user}) => {
 
      const path = useParams()
 
@@ -29,7 +29,7 @@ const ShowInfo = ({showDetails, onSetShowDetails}) => {
         {showDetails ? 
         <>
         <img src={showDetails.image.medium} alt={showDetails.name} />
-        <Discussion id={path['*']} /></>
+        <Discussion id={path['*']} user={user} /></>
         : 
         null}
         </div>

@@ -91,6 +91,21 @@
       "genres": "Comedy"
     }
   ],
+  "status": [
+    {
+      "id": "216.186.198.81",
+      "loggedIn": true,
+      "userName": "Brian R",
+      "avatar": "duck"
+    }
+  ],
+  "users": [
+    {
+      "id": "brian.d.reardon@gmail.com",
+      "userName": "Brian R",
+      "avatar": "duck"
+    }
+  ],
   "discussion": [
     {
       "id": 66,
@@ -106,12 +121,73 @@
           "date": "3/29/2023, 2:24:31 PM",
           "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
           "text": "I don't think this show is good because it is a bad show. I know what shows are good and what shows are bad and this is a bad show. we should cancel this show if we don't then I will cry. i cry  a lot my friends don't like it. But I can't help it because I don't like this show."
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 5:48:44 PM",
+          "avatar": "duck",
+          "text": "test"
+        },
+        {
+          "user": "",
+          "date": "3/29/2023, 5:49:24 PM",
+          "avatar": "",
+          "text": "duck"
+        },
+        {
+          "user": "",
+          "date": "3/29/2023, 5:55:16 PM",
+          "avatar": "",
+          "text": "test"
+        },
+        {
+          "user": "",
+          "date": "3/29/2023, 5:56:58 PM",
+          "avatar": "",
+          "text": "test\n"
+        },
+        {
+          "user": "",
+          "date": "3/29/2023, 5:58:48 PM",
+          "avatar": "",
+          "text": "test\n"
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 5:59:23 PM",
+          "avatar": "duck",
+          "text": "test"
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 6:57:47 PM",
+          "avatar": "duck",
+          "text": "test"
         }
       ]
     },
     {
       "id": "431",
-      "comments": []
+      "comments": [
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 5:35:16 PM",
+          "avatar": "../duck.svg",
+          "text": "test"
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 6:00:25 PM",
+          "avatar": "duck",
+          "text": "t"
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 6:00:55 PM",
+          "avatar": "duck",
+          "text": "test"
+        }
+      ]
     },
     {
       "id": "65",
@@ -120,6 +196,17 @@
     {
       "id": "526",
       "comments": []
+    },
+    {
+      "id": "530",
+      "comments": [
+        {
+          "user": "Anoymous",
+          "date": "3/29/2023, 3:31:47 PM",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+          "text": "very funny"
+        }
+      ]
     }
   ]
 }

@@ -14,7 +14,7 @@ const Post = ({ user, avatar, text, date }) => {
 
         
         <Comment>
-            <Comment.Avatar src={avatar} />
+            <Comment.Avatar src={"./duck.svg"} />
             <Comment.Content>
 
                 <Comment.Author>{user}</Comment.Author>
