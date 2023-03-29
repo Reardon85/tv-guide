@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import { Route, Routes, Param} from "react-router-dom";
-import Comment from "./Comment";
+import { Button, Form, Header, Comment } from 'semantic-ui-react'
+import Post from "./Post";
+import 'semantic-ui-css/semantic.min.css'
+import rhino from '../rhino.svg'
 
 const Discussion = ({id}) => {
 
@@ -9,8 +12,8 @@ const Discussion = ({id}) => {
     const [commentsExist, setCommentsExist] = useState(true)
     const [formData, setFormData] = useState({
         user: "Anoymous",
-        title: "",
-        body: ""
+        date: "",
+        avatar: rhino,
     })
 
 
@@ -59,6 +62,11 @@ const Discussion = ({id}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        const date = new Date().toLocaleString()
+        console.log(date)
+
+        
+
         //setComments([...comments, formData])
 
         fetch(`http://localhost:3000/discussion/${id}`, {
@@ -67,7 +75,7 @@ const Discussion = ({id}) => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                comments: [...comments, formData]
+                comments: [...comments, {...formData, date: date}]
             })
         })
         .then(r => r.json())
@@ -77,7 +85,7 @@ const Discussion = ({id}) => {
 
 
     const commentArray = comments.map((comment) => {
-        return <Comment key={comment.id} user={comment.user} title={comment.title} body={comment.body} />
+        return <Post key={comment.id} user={comment.user} avatar={comment.avatar} text={comment.text} date={comment.date} />
     })
 
     
@@ -87,17 +95,27 @@ const Discussion = ({id}) => {
         
         
         <div>
-            <h2>COMMENTS</h2>
+      <br/>
+    <Comment.Group>
+        <Header as='h3' dividing>
+            Comments
+        </Header>
             {commentArray}
-            <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="title" value={formData.title} onChange={handleChange} />
+            <br />
+   
+    
+            
+            <Form onSubmit={handleSubmit}>
+            <Form.TextArea name="text" value={formData.text} onChange={handleChange} />
+            <Button content='Add Comment' labelPosition='left' icon='edit' primary />
+                {/* <input type="text" name="title" value={formData.title} onChange={handleChange} />
                 <input type="text" name="body" value={formData.body} onChange={handleChange} />
-                <input type="submit" />
+                <input type="submit" /> */}
 
 
-            </form>
-            </div>
+            </Form>
+        </Comment.Group>
+            
         </div>
        
         
