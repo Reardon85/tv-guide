@@ -3,17 +3,17 @@ import { Route, Routes, Param} from "react-router-dom";
 import { Button, Form, Header, Comment } from 'semantic-ui-react'
 import Post from "./Post";
 import 'semantic-ui-css/semantic.min.css'
-import rhino from '../rhino.svg'
 
-const Discussion = ({id}) => {
+
+const Discussion = ({id, user}) => {
 
    
     const [comments, setComments] = useState([])
     const [commentsExist, setCommentsExist] = useState(true)
     const [formData, setFormData] = useState({
-        user: "Anoymous",
+        user: user.userName,
         date: "",
-        avatar: rhino,
+        avatar: user.avatar,
     })
 
 
@@ -80,6 +80,8 @@ const Discussion = ({id}) => {
         })
         .then(r => r.json())
         .then(d => setComments(d.comments))
+
+        setFormData((formData) => ({...formData, text:""}))
 
     }
 
