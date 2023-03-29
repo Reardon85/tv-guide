@@ -1,17 +1,21 @@
 import React, {useEffect} from "react";
 import Discussion from "./Discussion";
+import { Route, Routes, useParams} from "react-router-dom";
 
-const ShowInfo = ({showDetails}) => {
+const ShowInfo = ({showDetails, onSetShowDetails}) => {
 
-    // useEffect(() => {
-    //     fetch(`https://api.tvmaze.com/shows/${id}`)
-    //       .then((response) => response.json())
-    //       .then((data) => {
-    
-    //         setGenreShows(data)
-            
-    //       });
-    //   }, []);
+     const path = useParams()
+
+     console.log(path['*'])
+
+    useEffect(() => {
+           fetch(`https://api.tvmaze.com/shows/${path['*']}`)
+    .then(r => r.json())
+    .then(d => {
+      console.log(d)
+      onSetShowDetails(d)})
+
+      }, []);
     
     
     
@@ -25,7 +29,7 @@ const ShowInfo = ({showDetails}) => {
         {showDetails ? 
         <>
         <img src={showDetails.image.medium} alt={showDetails.name} />
-        <Discussion id={showDetails.id} /></>
+        <Discussion id={path['*']} /></>
         : 
         null}
         </div>

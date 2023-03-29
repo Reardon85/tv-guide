@@ -35,9 +35,9 @@ function App() {
 
       <Header setSearchShows={setSearchShows} />
       <Routes >
-        <Route exact path="/" element={<Home genreShows={genreShows} onSetShowDetails={setShowDetails}  />} />
-        <Route path="/search" element={<SearchResults searchShows={searchShows} onSetShowDetails={setShowDetails} />} />
-        <Route path="/show/*" element={<ShowInfo showDetails={showDetails}/>} />
+        <Route exact path="/" element={<Home genreShows={genreShows}   />} />
+        <Route path="/search" element={<SearchResults searchShows={searchShows} />} />
+        <Route path="/show/*" element={<ShowInfo showDetails={showDetails} onSetShowDetails={setShowDetails}/>} />
       </Routes>
     </div>
   );
