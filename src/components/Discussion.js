@@ -5,15 +5,17 @@ import Post from "./Post";
 import 'semantic-ui-css/semantic.min.css'
 
 
+
+
+
 const Discussion = ({ id, user }) => {
 
 
     const [comments, setComments] = useState([])
     const [commentsExist, setCommentsExist] = useState(true)
     const [formData, setFormData] = useState({
-        user: user.userName,
         date: "",
-        avatar: user.avatar,
+        text: ""
     })
 
 
@@ -54,21 +56,19 @@ const Discussion = ({ id, user }) => {
 
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value
-        })
+            text: e.target.value
+        } )
 
     }
-
+     console.log(user)
+     console.log(formData)
+     console.log("this is form data ^")
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
         const date = new Date().toLocaleString()
-        console.log(date)
-
-
-
-        //setComments([...comments, formData])
+        // console.log(date)
 
         fetch(`http://localhost:3000/discussion/${id}`, {
             method: "PATCH",
@@ -76,13 +76,16 @@ const Discussion = ({ id, user }) => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                comments: [...comments, { ...formData, date: date }]
+                comments: [...comments, { ...formData, date: date, user: user.userName, avatar: user.avatar }]
             })
         })
             .then(r => r.json())
-            .then(d => setComments(d.comments))
+            .then(d => {
+                // setFormData((formData) => ({ ...formData, text: "" }))
+                setComments(d.comments)
+            })
 
-        setFormData((formData) => ({ ...formData, text: "" }))
+        // setFormData((formData) => ({ ...formData, text: "" }))
 
     }
 
