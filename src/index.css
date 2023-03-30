@@ -38,7 +38,6 @@ header img {
   top: 20px; /* add this */
 }
 
-
 header form {
   display: flex;
   justify-content: flex-end;
@@ -323,17 +322,6 @@ h1 {
 }
 
 .summary {
-  position: relative;
-  top: 20px;
-  width: -100%;
-  margin: 0 0 0 150px;
-  font-size: 20px;
-  line-height: 1.5;
-  color: rgb(6, 6, 6);
-  text-align: justify;
-}
-
-.summary {
   width: 40%;
   margin: auto;
   font-size: 20px;
@@ -341,3 +329,21 @@ h1 {
   color: rgb(6, 6, 6);
   text-align: justify;
  }
+ 
+  /* Summary button */
+  
+ .description-btn {
+  display: inline-block;
+  background-color: #423488;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.description-btn:hover {
+  background-color: #7849f7;
+}

@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Discussion from "./Discussion";
 import { Route, Routes, useParams, Link } from "react-router-dom";
 import "../index.css";
 
 const ShowInfo = ({ showDetails, onSetShowDetails, user }) => {
   const path = useParams();
+  const [showSummary, setShowSummary] = useState(false);
 
   useEffect(() => {
     fetch(`https://api.tvmaze.com/shows/${path["*"]}`)
@@ -17,6 +18,10 @@ const ShowInfo = ({ showDetails, onSetShowDetails, user }) => {
 
   console.log(showDetails);
   console.log(user);
+
+  const toggleSummary = () => {
+    setShowSummary(!showSummary);
+  };
 
   return (
     <div className="show-card">
@@ -42,7 +47,15 @@ const ShowInfo = ({ showDetails, onSetShowDetails, user }) => {
                 <b>Web Channel:</b> {showDetails.webChannel.name}
               </p>
             ) : null}
-            <p className="summary">{showDetails.summary.replace(/(<([^>]+)>)/gi, "")}</p>
+           <button onClick={toggleSummary} className="description-btn">
+              {showSummary ? "Hide Summary" : "Show Summary"}
+            </button>
+            <p
+              className="summary"
+              style={{ display: showSummary ? "block" : "none" }}
+            >
+              {showDetails.summary.replace(/(<([^>]+)>)/gi, "")}
+            </p>
             {showDetails.rating.average && (
               <p className="rating">Rating: {showDetails.rating.average}</p>
             )}
