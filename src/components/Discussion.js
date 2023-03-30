@@ -65,7 +65,6 @@ const Discussion = ({id}) => {
         const date = new Date().toLocaleString()
         console.log(date)
 
-        
 
         //setComments([...comments, formData])
 

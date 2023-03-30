@@ -6,8 +6,6 @@ import Home from "./Home";
 import SearchResults from "./SearchResults";
 import ShowInfo from "./ShowInfo";
 
-
-
 function App() {
 
 
