@@ -4,20 +4,13 @@ import { Button, Form, Header, Comment, Message } from 'semantic-ui-react'
 import Post from "./Post";
 import 'semantic-ui-css/semantic.min.css'
 
-
-
-
-
 const Discussion = ({ id, user }) => {
-
-
     const [comments, setComments] = useState([])
     const [commentsExist, setCommentsExist] = useState(true)
     const [formData, setFormData] = useState({
         date: "",
         text: ""
     })
-
 
     useEffect(() => {
 
@@ -51,7 +44,6 @@ const Discussion = ({ id, user }) => {
 
     }, [commentsExist])
 
-
     const handleChange = (e) => {
 
         setFormData({
@@ -71,9 +63,7 @@ const Discussion = ({ id, user }) => {
 
         console.log(date)
 
-
         //setComments([...comments, formData])
-
 
         fetch(`http://localhost:3000/discussion/${id}`, {
             method: "PATCH",
@@ -99,12 +89,7 @@ const Discussion = ({ id, user }) => {
         return <Post key={comment.id} user={comment.user} avatar={comment.avatar} text={comment.text} date={comment.date} />
     })
 
-
-
-
     return (
-
-
         <div>
             <br />
             <Comment.Group>
@@ -113,8 +98,6 @@ const Discussion = ({ id, user }) => {
                 </Header>
                 {commentArray}
                 <br />
-
-
                 { user.loggedIn ? 
                     <Form onSubmit={handleSubmit}>
                         <Form.TextArea name="text" value={formData.text} onChange={handleChange} />

@@ -162,51 +162,62 @@ h1 {
 }
 
 .show-card {
-border-radius: 5px;
-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-cursor: pointer;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.show-card:hover {
-transform: translateY(-5px);
-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .show-card img {
-width: 100%;
-height: auto;
-border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 1px rgb(255, 247, 0);
 }
 
-.show-card h3 {
-font-size: 1.2rem;
-text-align: center;
-margin: 0;
-color: rgb(255, 255, 255);
+.show-card h2 {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .show-card p {
-font-size: 1rem;
-margin: 0;
-color: rgb(99, 96, 96);
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(2, 2, 2);
+  text-align: center;
 }
 
-.show-card-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-grid-gap: 20px;
-margin-top: 20px;
+.show-card a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-.show-card-container {
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.show-card a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
+
+.show-card .rating {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
 }
+
+.show-card .summary {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(6, 6, 6);
+  text-align: justify;
+}
+
+
 /* Submit button */
 
 .search-box {

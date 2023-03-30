@@ -6,8 +6,7 @@ const ShowCard = ({ id, image, name}) => {
 
   const handleClick = () => {
 
-
-
+    
   }
    const route = `/show/${id}`
   
