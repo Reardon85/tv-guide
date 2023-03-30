@@ -68,7 +68,12 @@ const Discussion = ({ id, user }) => {
         e.preventDefault()
 
         const date = new Date().toLocaleString()
-        // console.log(date)
+
+        console.log(date)
+
+
+        //setComments([...comments, formData])
+
 
         fetch(`http://localhost:3000/discussion/${id}`, {
             method: "PATCH",
