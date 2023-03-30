@@ -1,6 +1,6 @@
 import logo from '../HBOMIN.png'
 import React, { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Link, Route, Routes, useParams } from "react-router-dom";
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
 const LogIn = ({ user, onSetUser }) => {
@@ -34,16 +34,34 @@ const LogIn = ({ user, onSetUser }) => {
 
     fetch(`http://localhost:3000/status`, {
       method: "POST",
-      headers:{
+      headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(statusObj)
     })
-    .then(r => r.json())
-    .then(d => console.log(d))
-    
+      .then(r => r.json())
+      .then(d => {
+        if(Object.keys(d).length !== 0){
+        onSetUser((user) => ({
+          ...user,
+          loggedIn: true
+        }))
+      }
+      })
 
 
+
+  }
+
+  const handleLogOut = () => {
+
+    fetch(`http://localhost:3000/status/${user.ip}`, {
+      method: "DELETE"
+    })
+    .then(onSetUser((user) => ({
+      ...user,
+      loggedIn: false
+    })))
   }
 
   const handleChange = (e) => {
@@ -55,7 +73,7 @@ const LogIn = ({ user, onSetUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://localhost:3000/users/brian.d.reardon@gmail.com`)
+    fetch(`http://localhost:3000/users/${accountLogIn.email}`)
       .then(r => r.json())
       .then(d => {
         if (Object.keys(d).length !== 0) {
@@ -63,6 +81,7 @@ const LogIn = ({ user, onSetUser }) => {
         }
       })
   }
+
 
   console.log(user)
 
@@ -72,46 +91,62 @@ const LogIn = ({ user, onSetUser }) => {
 
 
   return (
+    <>
+      {
+        user.loggedIn ?
 
+          <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+            <Grid.Column style={{ maxWidth: 450 }}>
 
-    <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-      <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as='h2' color='black' textAlign='center'>
-          {/* <Image src={logo}  /> */} Log In
-        </Header>
-        <Form size='large' onSubmit={handleSubmit}>
-          <Segment stacked>
-            <Form.Input
-              fluid icon='user'
-              iconPosition='left'
-              placeholder='E-mail address'
-              name="email"
-              value={accountLogIn.email}
-              onChange={handleChange}
-            />
-            <Form.Input
-              fluid
-              icon='lock'
-              iconPosition='left'
-              placeholder='Password'
-              type='password'
-              name="password"
-              value={accountLogIn.password}
-              onChange={handleChange}
-            />
+              <Message>
+                <h3>You Are Already Logged In </h3>
+                <Button color='black' fluid size='large' onClick={handleLogOut}>
+                  Log Out
+                </Button>
+              </Message>
+            </Grid.Column>
 
-            <Button color='black' fluid size='large'>
-              Login
-            </Button>
-          </Segment>
-        </Form>
-        <Message>
-          New to us? <a href='#'>Sign Up</a>
-        </Message>
-      </Grid.Column>
-    </Grid>
+          </Grid>
+          :
+          <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+            <Grid.Column style={{ maxWidth: 450 }}>
+              <Header as='h2' color='black' textAlign='center'>
+                {/* <Image src={logo}  /> */} Log In
+              </Header>
+              <Form size='large' onSubmit={handleSubmit}>
+                <Segment stacked>
+                  <Form.Input
+                    fluid icon='user'
+                    iconPosition='left'
+                    placeholder='E-mail address'
+                    name="email"
+                    value={accountLogIn.email}
+                    onChange={handleChange}
+                  />
+                  <Form.Input
+                    fluid
+                    icon='lock'
+                    iconPosition='left'
+                    placeholder='Password'
+                    type='password'
+                    name="password"
+                    value={accountLogIn.password}
+                    onChange={handleChange}
+                  />
 
+                  <Button color='black' fluid size='large'>
+                    Login
+                  </Button>
+                </Segment>
+              </Form>
+              <Message>
+                New to us? <Link to={"/register"}>Sign Up</Link>
+              </Message>
+            </Grid.Column>
+          </Grid>
+      }
 
+    </>
   )
 }
 
