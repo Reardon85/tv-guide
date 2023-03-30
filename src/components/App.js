@@ -6,6 +6,7 @@ import Home from "./Home";
 import SearchResults from "./SearchResults";
 import ShowInfo from "./ShowInfo";
 import LogIn from "./LogIn";
+import Register from "./Register";
 
 
 
@@ -35,7 +36,7 @@ function App() {
           loggedIn: true,
           userName: d.userName,
           avatar: d.avatar,
-          ip: d.ip
+          ip: d.id
         }))
       } 
 
@@ -79,6 +80,7 @@ function App() {
         <Route path="/search" element={<SearchResults searchShows={searchShows} />} />
         <Route path="/show/*" element={<ShowInfo showDetails={showDetails} onSetShowDetails={setShowDetails} user={user}/>} />
         <Route path="/login" element={<LogIn user={user} onSetUser={setUser}/>} />
+        <Route path="/register" element={<Register user={user} onSetUser={setUser}/>} />
       </Routes>
     </div>
   );

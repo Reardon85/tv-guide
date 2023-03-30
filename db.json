@@ -91,7 +91,30 @@
       "genres": "Comedy"
     }
   ],
+  "exist": [
+    {
+      "id": "check",
+      "email": [
+        "drew.a.barnes@gmail.com",
+        "lupun213@hotmail.com",
+        "jonb@gmail.com",
+        "dogdog@gmail.com"
+      ],
+      "userName": [
+        "oliver c",
+        "jeff b",
+        "john b",
+        "tim"
+      ]
+    }
+  ],
   "status": [
+    {
+      "loggedIn": true,
+      "userName": "John B",
+      "avatar": "duck",
+      "id": "Ovl4niL"
+    },
     {
       "id": "216.186.198.81",
       "loggedIn": true,
@@ -103,6 +126,24 @@
     {
       "id": "brian.d.reardon@gmail.com",
       "userName": "Brian R",
+      "avatar": "duck"
+    },
+    {
+      "id": "amy.Jones@gmail.com",
+      "userName": "Steven R",
+      "password": "dogman",
+      "avatar": "duck"
+    },
+    {
+      "id": "jonB@gmail.com",
+      "userName": "John B",
+      "password": "temp",
+      "avatar": "duck"
+    },
+    {
+      "id": "dogdog@gmail.com",
+      "userName": "Tim",
+      "password": "dog",
       "avatar": "duck"
     }
   ],
@@ -161,6 +202,12 @@
         {
           "user": "Brian R",
           "date": "3/29/2023, 6:57:47 PM",
+          "avatar": "duck",
+          "text": "test"
+        },
+        {
+          "user": "Brian R",
+          "date": "3/29/2023, 7:48:40 PM",
           "avatar": "duck",
           "text": "test"
         }
