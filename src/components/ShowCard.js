@@ -2,15 +2,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const ShowCard = ({ id, image, name, onSetShowDetails}) => {
+const ShowCard = ({ id, image, name}) => {
 
   const handleClick = () => {
 
-    fetch(`https://api.tvmaze.com/shows/${id}`)
-    .then(r => r.json())
-    .then(d => {
-      console.log(d)
-      onSetShowDetails(d)})
+
 
   }
    const route = `/show/${id}`

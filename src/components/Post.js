@@ -6,7 +6,7 @@ import { Button, Form, Header, Comment } from 'semantic-ui-react'
 const Post = ({ user, avatar, text, date }) => {
 
 
-
+    console.log("whats the user" + user)
 
 
 

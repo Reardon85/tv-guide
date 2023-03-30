@@ -91,58 +91,76 @@
       "genres": "Comedy"
     }
   ],
+  "exist": [
+    {
+      "id": "check",
+      "email": [
+        "brian.d.reardon@gmail.com",
+        "biz@gmail.com"
+      ],
+      "userName": [
+        "brian r",
+        "biz"
+      ]
+    }
+  ],
+  "status": [
+    {
+      "loggedIn": true,
+      "userName": "Biz",
+      "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg",
+      "id": 1
+    },
+    {
+      "id": "216.186.198.81",
+      "loggedIn": true,
+      "userName": "Brian R",
+      "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
+    }
+  ],
+  "users": [
+    {
+      "id": "brian.d.reardon@gmail.com",
+      "userName": "Brian R",
+      "password": "pizza",
+      "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
+    },
+    {
+      "id": "biz@gmail.com",
+      "userName": "Biz",
+      "password": "pizza",
+      "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
+    }
+  ],
   "discussion": [
     {
-      "id": 66,
+      "id": "66",
       "comments": [
         {
-          "user": "Anoymous",
-          "date": "3/29/2023, 9:51:45 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "Desktop\n"
+
+          "date": "3/30/2023, 1:36:50 AM",
+          "text": "I hate this show. It's so dumb. I thought it was going to be about science and the creation of the Universe. But it's just about some dumb nerds. I wish Neil Degrasse Tyson wasn't dead. ",
+          "user": "Biz",
+          "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
         },
         {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:29:56 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
-        },
-        {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:29:57 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+          "date": "3/30/2023, 1:51:51 AM",
+          "text": "neil degrasse tyson isn't Dead you silly cat. You should watch one of his many educational shows!!!",
+          "user": "Brian R",
+          "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
+
         }
       ]
     },
     {
-      "id": 431,
-      "comments": []
-    },
-    {
-      "id": 526,
+
+      "id": "431",
       "comments": [
         {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:12:35 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "asd"
-        },
-        {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:12:45 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "asd\n"
-        },
-        {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:12:48 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "asd\nasd"
-        },
-        {
-          "user": "Anoymous",
-          "date": "3/29/2023, 10:12:52 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "asd\nasdasd"
+          "date": "3/30/2023, 1:52:14 AM",
+          "text": "I wish these were my friends!",
+          "user": "Brian R",
+          "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
         }
       ]
     },
