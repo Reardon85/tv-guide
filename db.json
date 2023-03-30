@@ -95,121 +95,58 @@
     {
       "id": "check",
       "email": [
-        "drew.a.barnes@gmail.com",
-        "lupun213@hotmail.com",
-        "jonb@gmail.com",
-        "dogdog@gmail.com"
+        "brian.d.reardon@gmail.com",
+        "biz@gmail.com"
       ],
       "userName": [
-        "oliver c",
-        "jeff b",
-        "john b",
-        "tim"
+        "brian r",
+        "biz"
       ]
     }
   ],
   "status": [
     {
       "loggedIn": true,
-      "userName": "John B",
-      "avatar": "duck",
-      "id": "Ovl4niL"
+      "userName": "Biz",
+      "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg",
+      "id": 1
     },
     {
       "id": "216.186.198.81",
       "loggedIn": true,
       "userName": "Brian R",
-      "avatar": "duck"
+      "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
     }
   ],
   "users": [
     {
       "id": "brian.d.reardon@gmail.com",
       "userName": "Brian R",
-      "avatar": "duck"
+      "password": "pizza",
+      "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
     },
     {
-      "id": "amy.Jones@gmail.com",
-      "userName": "Steven R",
-      "password": "dogman",
-      "avatar": "duck"
-    },
-    {
-      "id": "jonB@gmail.com",
-      "userName": "John B",
-      "password": "temp",
-      "avatar": "duck"
-    },
-    {
-      "id": "dogdog@gmail.com",
-      "userName": "Tim",
-      "password": "dog",
-      "avatar": "duck"
+      "id": "biz@gmail.com",
+      "userName": "Biz",
+      "password": "pizza",
+      "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
     }
   ],
   "discussion": [
     {
-      "id": 66,
+      "id": "66",
       "comments": [
         {
-          "user": "Anoymous",
-          "date": "3/29/2023, 2:22:23 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "test"
+          "date": "3/30/2023, 1:36:50 AM",
+          "text": "I hate this show. It's so dumb. I thought it was going to be about science and the creation of the Universe. But it's just about some dumb nerds. I wish Neil Degrasse Tyson wasn't dead. ",
+          "user": "Biz",
+          "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
         },
         {
-          "user": "Anoymous",
-          "date": "3/29/2023, 2:24:31 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "I don't think this show is good because it is a bad show. I know what shows are good and what shows are bad and this is a bad show. we should cancel this show if we don't then I will cry. i cry  a lot my friends don't like it. But I can't help it because I don't like this show."
-        },
-        {
+          "date": "3/30/2023, 1:51:51 AM",
+          "text": "neil degrasse tyson isn't Dead you silly cat. You should watch one of his many educational shows!!!",
           "user": "Brian R",
-          "date": "3/29/2023, 5:48:44 PM",
-          "avatar": "duck",
-          "text": "test"
-        },
-        {
-          "user": "",
-          "date": "3/29/2023, 5:49:24 PM",
-          "avatar": "",
-          "text": "duck"
-        },
-        {
-          "user": "",
-          "date": "3/29/2023, 5:55:16 PM",
-          "avatar": "",
-          "text": "test"
-        },
-        {
-          "user": "",
-          "date": "3/29/2023, 5:56:58 PM",
-          "avatar": "",
-          "text": "test\n"
-        },
-        {
-          "user": "",
-          "date": "3/29/2023, 5:58:48 PM",
-          "avatar": "",
-          "text": "test\n"
-        },
-        {
-          "user": "Brian R",
-          "date": "3/29/2023, 5:59:23 PM",
-          "avatar": "duck",
-          "text": "test"
-        },
-        {
-          "user": "Brian R",
-          "date": "3/29/2023, 6:57:47 PM",
-          "avatar": "duck",
-          "text": "test"
-        },
-        {
-          "user": "Brian R",
-          "date": "3/29/2023, 7:48:40 PM",
-          "avatar": "duck",
-          "text": "test"
+          "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
         }
       ]
     },
@@ -217,41 +154,10 @@
       "id": "431",
       "comments": [
         {
+          "date": "3/30/2023, 1:52:14 AM",
+          "text": "I wish these were my friends!",
           "user": "Brian R",
-          "date": "3/29/2023, 5:35:16 PM",
-          "avatar": "../duck.svg",
-          "text": "test"
-        },
-        {
-          "user": "Brian R",
-          "date": "3/29/2023, 6:00:25 PM",
-          "avatar": "duck",
-          "text": "t"
-        },
-        {
-          "user": "Brian R",
-          "date": "3/29/2023, 6:00:55 PM",
-          "avatar": "duck",
-          "text": "test"
-        }
-      ]
-    },
-    {
-      "id": "65",
-      "comments": []
-    },
-    {
-      "id": "526",
-      "comments": []
-    },
-    {
-      "id": "530",
-      "comments": [
-        {
-          "user": "Anoymous",
-          "date": "3/29/2023, 3:31:47 PM",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
-          "text": "very funny"
+          "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
         }
       ]
     }

@@ -6,7 +6,7 @@ import { Button, Form, Header, Comment } from 'semantic-ui-react'
 const Post = ({ user, avatar, text, date }) => {
 
 
-
+    console.log("whats the user" + user)
 
 
 
@@ -14,7 +14,7 @@ const Post = ({ user, avatar, text, date }) => {
 
         
         <Comment>
-            <Comment.Avatar src={"./duck.svg"} />
+            <Comment.Avatar src={avatar} />
             <Comment.Content>
 
                 <Comment.Author>{user}</Comment.Author>

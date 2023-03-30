@@ -23,13 +23,13 @@ const LogIn = ({ user, onSetUser }) => {
     password: ""
   })
 
-  const logInPersist = (d) => {
+  const logInPersist = (userFetch) => {
 
     const statusObj = {
       id: user.ip,
       loggedIn: true,
-      userName: d.userName,
-      avatar: d.avatar
+      userName: userFetch.userName,
+      avatar: userFetch.avatar
     }
 
     fetch(`http://localhost:3000/status`, {
@@ -43,8 +43,7 @@ const LogIn = ({ user, onSetUser }) => {
       .then(d => {
         if(Object.keys(d).length !== 0){
         onSetUser((user) => ({
-          ...user,
-          loggedIn: true
+          ...d
         }))
       }
       })
@@ -59,7 +58,8 @@ const LogIn = ({ user, onSetUser }) => {
       method: "DELETE"
     })
     .then(onSetUser((user) => ({
-      ...user,
+      userName: "",
+      avatar: "",
       loggedIn: false
     })))
   }
@@ -76,8 +76,10 @@ const LogIn = ({ user, onSetUser }) => {
     fetch(`http://localhost:3000/users/${accountLogIn.email}`)
       .then(r => r.json())
       .then(d => {
-        if (Object.keys(d).length !== 0) {
+        if (Object.keys(d).length !== 0 && d.password === accountLogIn.password) {
           logInPersist(d)
+        } else{
+          alert("Account/Password Is Incorrect ")
         }
       })
   }

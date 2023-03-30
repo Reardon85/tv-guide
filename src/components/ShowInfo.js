@@ -21,6 +21,8 @@ const ShowInfo = ({showDetails, onSetShowDetails, user}) => {
     
 
     console.log(showDetails)
+    console.log(user)
+    
 
 
     return(

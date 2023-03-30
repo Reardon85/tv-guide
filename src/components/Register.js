@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import rhino from '../avatars/rhino.svg'
+import duck from '../avatars/duck.svg'
+import eagle from '../avatars/eagle.svg'
+import fox from '../avatars/fox.svg'
+import owl from '../avatars/owl.svg'
+import tiger from '../avatars/tiger.svg'
+import whale from '../avatars/whale.svg'
 
 const Register = ({ user, onSetUser }) => {
 
@@ -15,7 +22,10 @@ const Register = ({ user, onSetUser }) => {
         email: [],
         userName: []
     })
+    
+    const avatarArray = [rhino, duck, eagle, fox, owl, tiger, whale]
     const navigate = useNavigate()
+    const randomNumber = Math.floor(Math.random()*7)
 
     useEffect(() => {
         fetch(`http://localhost:3000/exist/check`)
@@ -35,7 +45,7 @@ const Register = ({ user, onSetUser }) => {
             id: accountRegister.email,
             userName: accountRegister.userName,
             password: accountRegister.password,
-            avatar: "duck"
+            avatar: avatarArray[randomNumber]
         }
 
         fetch(`http://localhost:3000/users`, {
@@ -97,7 +107,7 @@ const Register = ({ user, onSetUser }) => {
         }
     }
 
-    console.log(accountExists)
+    
 
 
 
