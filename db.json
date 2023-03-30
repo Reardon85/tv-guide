@@ -96,11 +96,13 @@
       "id": "check",
       "email": [
         "brian.d.reardon@gmail.com",
-        "biz@gmail.com"
+        "biz@gmail.com",
+        "seyficanyalcindag@gmail.com"
       ],
       "userName": [
         "brian r",
-        "biz"
+        "biz",
+        "seyfican"
       ]
     }
   ],
@@ -116,6 +118,24 @@
       "loggedIn": true,
       "userName": "Brian R",
       "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
+    },
+    {
+      "id": "78.190.78.148",
+      "loggedIn": true,
+      "userName": "Seyfican",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+    },
+    {
+      "loggedIn": true,
+      "userName": "Seyfican",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+      "id": 2
+    },
+    {
+      "loggedIn": true,
+      "userName": "Seyfican",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+      "id": 3
     }
   ],
   "users": [
@@ -130,6 +150,12 @@
       "userName": "Biz",
       "password": "pizza",
       "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
+    },
+    {
+      "id": "Seyficanyalcindag@gmail.com",
+      "userName": "Seyfican",
+      "password": "Flatiron01.",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
     }
   ],
   "discussion": [
@@ -137,7 +163,6 @@
       "id": "66",
       "comments": [
         {
-
           "date": "3/30/2023, 1:36:50 AM",
           "text": "I hate this show. It's so dumb. I thought it was going to be about science and the creation of the Universe. But it's just about some dumb nerds. I wish Neil Degrasse Tyson wasn't dead. ",
           "user": "Biz",
@@ -148,12 +173,22 @@
           "text": "neil degrasse tyson isn't Dead you silly cat. You should watch one of his many educational shows!!!",
           "user": "Brian R",
           "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
-
+        },
+        {
+          "date": "3/30/2023, 5:35:54 PM",
+          "text": "",
+          "user": "Seyfican",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+        },
+        {
+          "date": "3/30/2023, 5:38:13 PM",
+          "text": "",
+          "user": "Seyfican",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
         }
       ]
     },
     {
-
       "id": "431",
       "comments": [
         {
@@ -170,6 +205,61 @@
     },
     {
       "id": 171,
+      "comments": []
+    },
+    {
+      "id": "13417",
+      "comments": []
+    },
+    {
+      "id": "526",
+      "comments": []
+    },
+    {
+      "id": "23542",
+      "comments": [
+        {
+          "date": "3/30/2023, 5:35:05 PM",
+          "text": "Great Show\n",
+          "user": "Seyfican",
+          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+        }
+      ]
+    },
+    {
+      "id": "20895",
+      "comments": []
+    },
+    {
+      "id": "12036",
+      "comments": []
+    },
+    {
+      "id": "42986",
+      "comments": []
+    },
+    {
+      "id": "175",
+      "comments": []
+    },
+    {
+      "id": "49334",
+      "comments": []
+    },
+    {
+      "id": "530",
+      "comments": []
+    },
+    {
+      "id": "139",
+      "comments": []
+    },
+    {
+      "id": "169",
+      "comments": []
+    },
+    {
+      "id": "47856",
       "comments": []
     }
   ]
