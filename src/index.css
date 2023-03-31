@@ -86,6 +86,15 @@ header img:hover {
     transform: skewY(0deg) rotate(0deg);
   }
 }
+
+
+header .logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
 /* Add some text shadow to the header title */
 h1 {
   font-size: 2rem;
@@ -165,8 +174,13 @@ h1 {
   justify-content: center;
   margin-top: 50px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Add a hover effect to the show cards */
+.show-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
 .show-card img {
   max-width: 100%;
   height: auto;
@@ -213,6 +227,86 @@ h1 {
   line-height: 1.5;
   color: rgb(6, 6, 6);
   text-align: justify;
+}
+
+
+
+
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.show-info img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 1px rgb(255, 247, 0);
+
+}
+
+.show-info h2 {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.show-info p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(2, 2, 2);
+  text-align: center;
+}
+
+.show-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.show-info a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+.show-info .rating {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.show-info .summary {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(6, 6, 6);
+  text-align: justify;
+}
+
+
+.discussion {
+  text-align: left;
+  padding-bottom: 5vh; 
+
+}
+
+.discussion img{
+  box-shadow: none;
+}
+
+.discussion a{
+  color: black;
+}
+
+.discussion a:hover{
+  color: black
 }
 
 

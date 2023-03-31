@@ -39,14 +39,25 @@ const Register = ({ user, onSetUser }) => {
     }, []);
 
 
+    var bcrypt = require('bcryptjs');
 
-    const createAccount = () => {
+
+  
+
+
+    const createAccount = (hashPassword) => {
+        console.log(typeof(hashPassword))
+        const newPw = String(hashPassword)
+        
+        console.log("hashed PW: ", newPw)
         const userObj = {
-            id: accountRegister.email,
+            id: accountRegister.email.toLowerCase(),
             userName: accountRegister.userName,
-            password: accountRegister.password,
+            password: hashPassword,
             avatar: avatarArray[randomNumber]
         }
+
+        console.log(userObj)
 
         fetch(`http://localhost:3000/users`, {
             method: "POST",
@@ -97,13 +108,19 @@ const Register = ({ user, onSetUser }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (accountExists.email.includes(accountRegister.email.toLocaleLowerCase()) ) {
+        if (accountExists.email.includes(accountRegister.email.toLowerCase()) ) {
 
             alert("Email is Already Registered")
-        } else if( accountExists.userName.includes(accountRegister.userName.toLocaleLowerCase)){
+        } else if( accountExists.userName.includes(accountRegister.userName.toLowerCase())){
             alert("User Name Is Already Taken")
         } else {
-            createAccount()
+
+            const saltRounds = 10
+
+            bcrypt.hash(accountRegister.password, saltRounds)
+            .then( d =>  createAccount(d)
+            )
+           
         }
     }
 

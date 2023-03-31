@@ -24,7 +24,7 @@ const ShowInfo = ({ showDetails, onSetShowDetails, user }) => {
   };
 
   return (
-    <div className="show-card">
+    <div className="show-info">
       {showDetails ? (
         <>
           <img src={showDetails.image.medium} alt={showDetails.name} />

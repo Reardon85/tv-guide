@@ -10,6 +10,8 @@ import Register from "./Register";
 
 
 
+
+
 function App() {
 
 
@@ -22,9 +24,15 @@ function App() {
     avatar: '',
     ip: ''
   })
-  let address;
+
+ 
+ 
 
 
+ 
+
+
+ 
   const checkLogIn = (iP) => {
 
     fetch(`http://localhost:3000/status/${iP}`)
@@ -55,17 +63,10 @@ function App() {
         
       });
 
-      fetch('https://geolocation-db.com/json/')
-      .then((response) => response.json())
-      .then((data) => {
+      const uniqueId = window.localStorage.getItem("userCookie")
+      checkLogIn(uniqueId)
 
-        setUser((user) => ({
-          ...user,
-          ip: data.IPv4
-        }))
-        checkLogIn(data.IPv4)
-        
-      });
+
   }, []);
 
   console.log(user)
@@ -74,7 +75,7 @@ function App() {
   return (
     <div className="App">
 
-      <Header setSearchShows={setSearchShows} />
+      <Header setSearchShows={setSearchShows} user={user} />
       <Routes >
         <Route exact path="/" element={<Home genreShows={genreShows}   />} />
         <Route path="/search" element={<SearchResults searchShows={searchShows} />} />

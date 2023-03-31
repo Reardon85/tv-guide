@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Route, Routes, Param } from "react-router-dom";
+import { Route, Routes, Param } from "react-router-dom";            
 import { Button, Form, Header, Comment } from 'semantic-ui-react'
 
 
 const Post = ({ user, avatar, text, date }) => {
-
+            
 
     console.log("whats the user" + user)
 
@@ -13,7 +13,7 @@ const Post = ({ user, avatar, text, date }) => {
     return (
 
         
-        <Comment>
+        <Comment className="post">
             <Comment.Avatar src={avatar} />
             <Comment.Content>
 

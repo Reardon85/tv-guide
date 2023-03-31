@@ -97,12 +97,16 @@
       "email": [
         "brian.d.reardon@gmail.com",
         "biz@gmail.com",
-        "seyficanyalcindag@gmail.com"
+        "seyficanyalcindag@gmail.com",
+        "kort@gmail.com",
+        "tuck"
       ],
       "userName": [
         "brian r",
         "biz",
-        "seyfican"
+        "seyfican",
+        "kort",
+        "tuck"
       ]
     }
   ],
@@ -112,12 +116,6 @@
       "userName": "Biz",
       "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg",
       "id": 1
-    },
-    {
-      "id": "216.186.198.81",
-      "loggedIn": true,
-      "userName": "Brian R",
-      "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
     },
     {
       "id": "78.190.78.148",
@@ -136,6 +134,36 @@
       "userName": "Seyfican",
       "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
       "id": 3
+    },
+    {
+      "loggedIn": true,
+      "userName": "Biz",
+      "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg",
+      "id": 4
+    },
+    {
+      "loggedIn": true,
+      "userName": "Obama",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+      "id": 5
+    },
+    {
+      "loggedIn": true,
+      "userName": "Joe Biden",
+      "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg",
+      "id": 6
+    },
+    {
+      "loggedIn": true,
+      "userName": "hillary",
+      "avatar": "/static/media/whale.2ee3636b7a89131cb17347e1fe26e7e2.svg",
+      "id": 7
+    },
+    {
+      "id": "bd85cf94-ef06-48ff-9ab9-e450bf818ab0",
+      "loggedIn": true,
+      "userName": "tuck",
+      "avatar": "/static/media/whale.2ee3636b7a89131cb17347e1fe26e7e2.svg"
     }
   ],
   "users": [
@@ -152,10 +180,22 @@
       "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
     },
     {
-      "id": "Seyficanyalcindag@gmail.com",
+      "id": "seyficanyalcindag@gmail.com",
       "userName": "Seyfican",
       "password": "Flatiron01.",
       "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+    },
+    {
+      "id": "kort@gmail.com",
+      "userName": "Kort",
+      "password": "$2a$10$P8n9Q6AHgQN1ZqlK5/Jfl.BGb/.A7GN/YccL38gL36xS4YnKpN5Ty",
+      "avatar": "/static/media/fox.2f0868aac83bee1846dbf39ffc12b35d.svg"
+    },
+    {
+      "id": "tuck",
+      "userName": "tuck",
+      "password": "$2a$10$jKzmkaea7vXi9O8hm5R03u/IOD7W/HK8hxrLjfXZeSAd.zTAEnBj6",
+      "avatar": "/static/media/whale.2ee3636b7a89131cb17347e1fe26e7e2.svg"
     }
   ],
   "discussion": [
@@ -175,22 +215,16 @@
           "avatar": "/static/media/owl.70b193c47b3e70536fd1b86064cd52b3.svg"
         },
         {
-          "date": "3/30/2023, 5:35:54 PM",
-          "text": "",
-          "user": "Seyfican",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
-        },
-        {
-          "date": "3/30/2023, 5:38:13 PM",
-          "text": "",
-          "user": "Seyfican",
-          "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
-        },
-        {
           "date": "3/30/2023, 7:44:38 PM",
           "text": "Great Show",
           "user": "Seyfican",
           "avatar": "/static/media/rhino.6ae0f7d0ec0a93a22d16cb3f6a93280a.svg"
+        },
+        {
+          "date": "3/31/2023, 3:02:07 AM",
+          "text": "HAHAHA last episode was so Funny!!!",
+          "user": "hillary",
+          "avatar": "/static/media/whale.2ee3636b7a89131cb17347e1fe26e7e2.svg"
         }
       ]
     },
@@ -211,7 +245,14 @@
     },
     {
       "id": 171,
-      "comments": []
+      "comments": [
+        {
+          "date": "3/31/2023, 3:03:18 AM",
+          "text": "I like the spin off better",
+          "user": "hillary",
+          "avatar": "/static/media/whale.2ee3636b7a89131cb17347e1fe26e7e2.svg"
+        }
+      ]
     },
     {
       "id": "13417",
@@ -246,7 +287,14 @@
     },
     {
       "id": "175",
-      "comments": []
+      "comments": [
+        {
+          "date": "3/31/2023, 2:55:13 AM",
+          "text": "Politicians Sure Are Mean!!",
+          "user": "Biz",
+          "avatar": "/static/media/eagle.297309d9d59c9426fcfba6d07400ba05.svg"
+        }
+      ]
     },
     {
       "id": "49334",
