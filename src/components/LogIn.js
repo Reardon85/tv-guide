@@ -67,7 +67,7 @@ const LogIn = ({ user, onSetUser }) => {
 
   const handleLogOut = () => {
 
-    fetch(`http://localhost:3000/status/${user.ip}`, {
+    fetch(`http://localhost:3000/status/${window.localStorage.getItem("userCookie")}`, {
       method: "DELETE"
     })
     .then(onSetUser((user) => ({
@@ -75,7 +75,11 @@ const LogIn = ({ user, onSetUser }) => {
       avatar: "",
       loggedIn: false
     })))
+    .then(window.localStorage.removeItem("userCookie"))
+  
   }
+
+
 
   const handleChange = (e) => {
     setAccountLogIn((accountLogIn) => ({
