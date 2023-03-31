@@ -15,7 +15,7 @@ const Discussion = ({ id, user }) => {
     useEffect(() => {
 
         if (commentsExist) {
-            fetch(`http://localhost:3000/discussion/${id}`)
+            fetch(`https://hbomin.onrender.com/discussion/${id}`)
                 .then(r => r.json())
                 .then(d => {
                     console.log(d)
@@ -31,7 +31,7 @@ const Discussion = ({ id, user }) => {
                 comments: []
             }
 
-            fetch(`http://localhost:3000/discussion/`, {
+            fetch(`https://hbomin.onrender.com/discussion/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -65,7 +65,7 @@ const Discussion = ({ id, user }) => {
 
         //setComments([...comments, formData])
 
-        fetch(`http://localhost:3000/discussion/${id}`, {
+        fetch(`https://hbomin.onrender.com/discussion/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

@@ -28,7 +28,7 @@ const Register = ({ user, onSetUser }) => {
     const randomNumber = Math.floor(Math.random()*7)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/exist/check`)
+        fetch(`https://hbomin.onrender.com/exist/check`)
             .then(r => r.json())
             .then(d => {
                 setAccountExists({
@@ -59,7 +59,7 @@ const Register = ({ user, onSetUser }) => {
 
         console.log(userObj)
 
-        fetch(`http://localhost:3000/users`, {
+        fetch(`https://hbomin.onrender.com/users`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -75,7 +75,7 @@ const Register = ({ user, onSetUser }) => {
     }
 
     const addToExists = (newUser, newEmail) => {
-        fetch(`http://localhost:3000/exist/check`, {
+        fetch(`https://hbomin.onrender.com/exist/check`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -167,6 +167,8 @@ const Register = ({ user, onSetUser }) => {
                             value={accountRegister.password}
                             onChange={handleChange}
                         />
+
+
 
                         <Button color='black' fluid size='large'>
                             Login

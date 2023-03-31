@@ -44,7 +44,7 @@ const LogIn = ({ user, onSetUser }) => {
       avatar: userFetch.avatar
     }
 
-    fetch(`http://localhost:3000/status`, {
+    fetch(`https://hbomin.onrender.com/status`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -67,7 +67,7 @@ const LogIn = ({ user, onSetUser }) => {
 
   const handleLogOut = () => {
 
-    fetch(`http://localhost:3000/status/${window.localStorage.getItem("userCookie")}`, {
+    fetch(`https://hbomin.onrender.com/status/${window.localStorage.getItem("userCookie")}`, {
       method: "DELETE"
     })
     .then(onSetUser((user) => ({
@@ -90,7 +90,7 @@ const LogIn = ({ user, onSetUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://localhost:3000/users/${accountLogIn.email.toLowerCase()}`)
+    fetch(`https://hbomin.onrender.com/users/${accountLogIn.email.toLowerCase()}`)
       .then(r => r.json())
       .then(d => {
         if (Object.keys(d).length !== 0) {

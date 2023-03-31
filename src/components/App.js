@@ -35,7 +35,7 @@ function App() {
  
   const checkLogIn = (iP) => {
 
-    fetch(`http://localhost:3000/status/${iP}`)
+    fetch(`https://hbomin.onrender.com/status/${iP}`)
     .then(r => r.json())
     .then(d =>{
       if(Object.keys(d).length !== 0 && d.loggedIn){
@@ -55,7 +55,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/shows")
+    fetch("https://hbomin.onrender.com/shows")
       .then((response) => response.json())
       .then((data) => {
 
