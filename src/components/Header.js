@@ -1,10 +1,14 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import logo from '../HBOMIN.png'
+import { Button, Message } from 'semantic-ui-react'
 
-const Header = ({ setSearchShows }) => {
+import 'semantic-ui-css/semantic.min.css'
+
+
+const Header = ({ setSearchShows, user }) => {
 
     const navigate = useNavigate()
   
@@ -31,7 +35,15 @@ const Header = ({ setSearchShows }) => {
           alt="HBO Min"
           onClick={handleLogoClick}
         />
+        <div className="logout">
+        {user.loggedIn ?
+<>
         
+        <Link to="/login"> Log Out of {user.userName}</Link>
+  </>      
+      :
+      <Link to="/login">Log In</Link>} </div>
+
         <form onSubmit={handleSubmit}>
           <div className="search-bar" style={{ width: "200px" }}>
             <input type="text" name="search" className="search-input" placeholder="Search for shows" style={{ width: "100%" }} />
@@ -40,6 +52,7 @@ const Header = ({ setSearchShows }) => {
             </button>
           </div>
         </form>
+       
       </header>
     );
   };

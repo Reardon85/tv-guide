@@ -80,7 +80,7 @@ const Discussion = ({ id, user }) => {
                 setComments(d.comments)
             })
 
-        // setFormData((formData) => ({ ...formData, text: "" }))
+         setFormData((formData) => ({ ...formData, text: "" }))
 
     }
 
@@ -90,14 +90,14 @@ const Discussion = ({ id, user }) => {
     })
 
     return (
-        <div>
+        <div className="discussion">
             <br />
             <Comment.Group>
                 <Header as='h3' dividing>
                     Comments
                 </Header>
                 {commentArray}
-                <br />
+              
                 { user.loggedIn ? 
                     <Form onSubmit={handleSubmit}>
                         <Form.TextArea name="text" value={formData.text} onChange={handleChange} />
@@ -106,7 +106,7 @@ const Discussion = ({ id, user }) => {
                     :
                     <Message>
                     <h3>You Must Log In To Comment</h3>
-                    <Link to={'/login'}>LOG IN</Link>
+                    <Link  to={'/login'}>LOG IN</Link>
                 </Message>
 
                 }

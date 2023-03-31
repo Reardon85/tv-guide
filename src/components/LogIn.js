@@ -2,6 +2,9 @@ import logo from '../HBOMIN.png'
 import React, { useEffect, useState } from "react";
 import { Link, Route, Routes, useParams } from "react-router-dom";
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import {v4 as uuidv4} from 'uuid'
+
+
 
 const LogIn = ({ user, onSetUser }) => {
 
@@ -23,10 +26,19 @@ const LogIn = ({ user, onSetUser }) => {
     password: ""
   })
 
+
+  var bcrypt = require('bcryptjs');
+
+
+
+  
+
   const logInPersist = (userFetch) => {
 
+    const uniqueId = uuidv4()
+
     const statusObj = {
-      id: user.ip,
+      id: uniqueId,
       loggedIn: true,
       userName: userFetch.userName,
       avatar: userFetch.avatar
@@ -42,6 +54,7 @@ const LogIn = ({ user, onSetUser }) => {
       .then(r => r.json())
       .then(d => {
         if(Object.keys(d).length !== 0){
+          window.localStorage.setItem("userCookie", uniqueId)
         onSetUser((user) => ({
           ...d
         }))
@@ -73,15 +86,31 @@ const LogIn = ({ user, onSetUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://localhost:3000/users/${accountLogIn.email}`)
+    fetch(`http://localhost:3000/users/${accountLogIn.email.toLowerCase()}`)
       .then(r => r.json())
       .then(d => {
-        if (Object.keys(d).length !== 0 && d.password === accountLogIn.password) {
-          logInPersist(d)
+        if (Object.keys(d).length !== 0) {
+          validatePassword(d)
         } else{
           alert("Account/Password Is Incorrect ")
         }
       })
+  }
+
+
+  const validatePassword = (userInfo) => {
+
+
+    console.log(userInfo)
+    console.log(accountLogIn.password)
+    bcrypt.compare(accountLogIn.password, userInfo.password)
+    .then(d => {
+      if(d){
+        logInPersist(userInfo)
+      } else {
+        alert("Account/Password Is Incorrect")
+      }
+    })
   }
 
 
